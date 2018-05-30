@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f7f7f7;
+  color: #1d2129;
+  font-family: 'Glegoo', serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+/*------------------------------- HEADER ----------------------------------*/
+
+.lotto-header {
+  position: relative;
+  height: 100px;
+  margin-bottom: 50px;
+  background: #ffeaa7bd;
+  box-shadow: 0 4px 2px -2px rgb(204, 204, 204);
+}
+
+.lotto-logo {
+  background-image: url('lotto.png');
+  width: 10%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 88%;
+}
+
+.lotto-header p {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  height: 80%;
+}
+
+#jackpot {
+  font-size: 230%;
+  color: #1d2129;
+}
+
+#jackpot-size {
+  margin-left: 25px;
+  color: #2a9641;
+  font-size: 150%;
+  font-weight: 400;
+}
+
+
+/*------------------------------- TITLES ----------------------------------*/
+.title {
+  padding: 0 20px;
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+
+/*------------------------------- SECTION SELECT NUMBERS ----------------------------------*/
+
+.section-select-numbers {
+  box-shadow: 0 5px 2px -2px rgb(204, 204, 204);
+  padding: 20px 20px;
+  margin-bottom: 3px;
+}
+
+.instructions {
+  font-size: 70%;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-style: italic;
+
+}
+
+.input-group {
+  width: 85%;
+  position: relative;
+}
+
+.input-number {
+  width: 50%;
+  height: 150px;
+  border-radius: 80%;
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
+  font-size: 350%;
+  font-weight: 700;
+  background-color: #fff200;
+  border-color: #fff200;
+  border-style: solid;
+  box-shadow: -2px 2px #b8af02;
+  caret-color: rgba(136, 136, 136, 0.74);
+}
+
+.input-number:focus {
+   outline: none;
+}
+
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number {
+  -moz-appearance: textfield;
+}
+
+.input-number::-webkit-input-placeholder {
+  color: rgba(136, 136, 136, 0.445);
+}
+
+
+.button-add,
+.button-delete,
+.button-confirm-sheet {
+  width: 40%;
+  position: absolute;
+  height: 40%;
+  border-radius: 10px;
+  font-size: 70%;
+  text-transform: uppercase;
+}
+
+.button-add:focus,
+.button-delete:focus,
+.button-confirm-sheet:focus {
+  outline: none;
+}
+
+.button-add,
+.button-confirm-sheet {
+  top: 5px;
+  right: 0;
+}
+
+.button-delete {
+  bottom: 5px;
+  right: 0;
+  background-color: #eb2f06;
+  border-color: #eb2f06;
+  box-shadow: -1px 1px #9c2207;
+  color: #f1e7e4;
+}
+
+.button-add {
+  background-color:#3b5998;
+  border-color: #3b5998;
+  box-shadow: -1px 1px #273a64;
+
+  color: #f7f7f7;
+}
+
+.button-confirm-sheet {
+  background-color: #3dda5f;
+  border-color: #3dda5f;
+  color: #1d2129;
+}
+
+.current-sheet {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px #1d2129;
+}
+
+.current-sheet-numbers {
+  margin-left: 15px;
+}
+
+.number-ball {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+  margin-left: 20px;
+  border-radius: 100%;
+  border: 1px solid #fff200;
+  font-size: 150%;
+  text-decoration: underline;
+  background-color: #fff200;
+  box-shadow: -1px 1px #b8af02;
+  text-align: center; 
+}
+
+/*------------------------------- SECTION HANDLE SHEETS ----------------------------------*/
+
+.section-handle-sheets {
+  padding: 30px 20px;
+  background-color: #ffeaa7;
+  height: 100vh;
+}
+
+.handle-sheets-row {
+  display: flex;
+  justify-content: center;
+}
+
+.sheets-list-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sheets-list-title p {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.button-remove-sheet,
+.button-start-draw { 
+  border-radius: 10px;
+  text-transform: uppercase;
+  border-color: transparent;
+  height: 50px;
+}
+
+.button-remove-sheet:focus,
+.button-start-draw:focus {
+  outline: none;
+}
+
+.button-remove-sheet {
+  background-color: #eb2f06;
+  color: #f1e7e4;
+  box-shadow: -2px 2px #9c2207; 
+  width: 50%;
+}
+
+.button-start-draw {
+  background: #3dda5f;
+  color: #1d2129;
+  font-weight: bold;
+  box-shadow: -2px 2px #2a9641; 
+  width: 100%;
+}
+
+.sheets-list {
+  list-style: none;
+}
+
+.sheets-list li {
+  margin-bottom: 35px;
+}
+
+.ordinal-numbers {
+  color: rgb(128, 128, 128);
+  margin-right: 25px;
+}
+
+.sheet-numbers {
+  position: relative;
+  font-size: 130%;
+  font-weight: bold;
+  word-spacing: 35px;
+}
+
+.sheet-numbers::after {
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  width: 115%; 
+  height: 1px; 
+  border-bottom: 2px solid rgba(128, 128, 128, 0.151); 
+  content: ""
+}
+
+/*------------------------------- DRAW ----------------------------------*/
+
+.draw {
+  margin: 0 20px;
+}
+
+.drawn-numbers {
+  height: 150px;
+  position: relative;
+}
+
+.drawn-numbers button {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 25%;
+}
+
+.points {
+  margin-right: 40px;
+}
+
+
